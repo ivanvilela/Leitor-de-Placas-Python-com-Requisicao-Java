@@ -54,7 +54,7 @@ Este projeto é um aplicativo Python que utiliza a biblioteca OpenCV e Tesseract
     ` http://localhost:8080/api/v1/parking-records/exit. `
 
 6. Uso:
-   Para detectar uma placa e enviar os dados, execute o arquivo Python principal:
+   - Para detectar uma placa e enviar os dados, execute o arquivo Python principal:
    
     ```bash
     python leitorplaca.py
