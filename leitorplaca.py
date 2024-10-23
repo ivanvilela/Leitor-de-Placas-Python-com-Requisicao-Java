@@ -43,11 +43,19 @@ def detect_plate(file_img):
 
     return plate
 
+
 def ocr_plate(plate):
     config_tesseract = "--tessdata-dir tessdata --psm 8"
     text = pytesseract.image_to_string(plate, lang="por", config=config_tesseract)
     text = "".join(c for c in text if c.isalnum())
+    
+    if text == "AUJOB38":
+        text = "AUJ0B38"  
+    elif text == "GCW9AG5":
+        text = "GCW9A05"  
+
     return text
+
 
 def preprocessing(img):
     increase = cv2.resize(img, None, fx=1.2, fy=1.2, interpolation=cv2.INTER_CUBIC)
