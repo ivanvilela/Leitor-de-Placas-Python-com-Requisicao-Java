@@ -50,12 +50,8 @@ Este projeto é um aplicativo Python que utiliza a biblioteca OpenCV e Tesseract
 
 5. Certifique-se de que o serviço Java esteja em execução e acessível em
    
-    ```http
-    http://localhost:8080/api/v1/parking-records/entry
-    ```
-    ```http
-    http://localhost:8080/api/v1/parking-records/exit.
-    ```
+    ` http://localhost:8080/api/v1/parking-records/entry ` e
+    ` http://localhost:8080/api/v1/parking-records/exit. `
 
 6. Uso:
    Para detectar uma placa e enviar os dados, execute o arquivo Python principal:
