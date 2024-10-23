@@ -49,14 +49,20 @@ Este projeto é um aplicativo Python que utiliza a biblioteca OpenCV e Tesseract
     ```
 
 5. Certifique-se de que o serviço Java esteja em execução e acessível em
-   http://localhost:8080/api/v1/parking-records/entry e
-   http://localhost:8080/api/v1/parking-records/exit.
+   
+    ```http
+    http://localhost:8080/api/v1/parking-records/entry
+    ```
+    ```http
+    http://localhost:8080/api/v1/parking-records/exit.
+    ```
 
 6. Uso:
    Para detectar uma placa e enviar os dados, execute o arquivo Python principal:
+   
     ```bash
     python leitorplaca.py
-    ```
+     ```
 
      **Caso ocorrer este erro: "error: pytesseract.pytesseract.TesseractError: (1, 'Error opening data file tessdata/eng.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory. Failed loading language \'eng\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')"**
    - Abra o terminal no Visual Studio Code e execute os seguintes comandos:
