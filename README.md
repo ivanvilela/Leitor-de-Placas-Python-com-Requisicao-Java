@@ -49,5 +49,5 @@ Este projeto é um aplicativo Python que utiliza a biblioteca OpenCV e Tesseract
 5. Uso:
    Para detectar uma placa e enviar os dados, execute o arquivo Python principal:
     ```bash
-    python .py
+    python leitorplaca.py
 
